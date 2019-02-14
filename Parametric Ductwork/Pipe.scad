@@ -3,9 +3,13 @@ thickness = 10; // 3mm in thickness
 diameter = 152.4; // 6 inches in diameter
 height = 200; // 100mm long
 
+/**** Try commenting/uncommenting this stuff ****/
+
 //pipe(thickness, diameter/2, height);
 pipe_angle(thickness, diameter/2, 90);
 //pipe_lip(thickness, diameter/2);
+
+/**** Ok that's all, heavy lifting starts here. ****/
 
 module pipe_angle(thickness, radius, angle) {
     curve = (radius+thickness)*1.5;
